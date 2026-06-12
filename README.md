@@ -33,7 +33,7 @@
 
 <h2>Mesure de Performance</h2>
 <ul>
-<p>Oberservation: Selon les résultats en dessous le modèle est très performant et généralise bien sur la l'ensemble des classes. Cependant, des faiblesses sur certaines émotions sont à noter, comme celui de la peur qui doit être confondu avec l'émotion surprise, qui d'ailleurs est l'émotion  la plus difficile à reconnaitre.</p>
+<p><b>Oberservation</b>: Selon les résultats en dessous le modèle est très performant et généralise bien sur la l'ensemble des classes. Cependant, des faiblesses sur certaines émotions sont à noter, comme celui de la peur qui doit être confondu avec l'émotion surprise, qui d'ailleurs est l'émotion  la plus difficile à reconnaitre.</p>
            <img src="capture_img/MesureDePeroformance_Model.png" alt="Mesure de performance" width="600">
            <li><b>Acuracy:  89%</b> </li>
            <li><b>Macro F1-score :  85%</b></li>
