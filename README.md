@@ -1,7 +1,7 @@
 <h1>Projet : NLP Analyse émotionnelle</h1>
 
 
-<h3>Détection des émotion humaines à partir de courtes phrases.</h3>
+<h3>Détection des émotions humaines à partir de courtes phrases.</h3>
 
 <h2>Introduction:</h2>
 <p>Dans ce projet personnel qui a pour objectif d'améliorer mes compétences dans le domaine du machine learning, j'ai entraîné un modèle  de régression logistique afin d'identifier l'émotion dominante dans une phrase courte.  L'application streamlit sera nécessaire pour tester le modèle sur différents échantillons de phrase correspondant à six classes d'émotions Pour ce faire , on transforme le texte brut en une émotion interprétable.</p></br>
