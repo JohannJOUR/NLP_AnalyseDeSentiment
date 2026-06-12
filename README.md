@@ -54,15 +54,16 @@
 
 
 <h2>Exemple d'utilisation:</h2>
-Dans le prompt, écrire une courte phrase en anglais. Puis appuyer sur le bouton analyser afin d'afficher la classe de l'émotion correspondant à la phrase. 
+<p>Dans le prompt, écrire une courte phrase en anglais. Puis appuyer sur le bouton analyser afin d'afficher la classe de l'émotion correspondant à la phrase.</p>
 
 <h2>Déploiement dans le Docker</h2>
 <nav>
-           <li><b>Activer le Docke</b>r</li>
-           <ul>ligne de commande à entrer dans l'invite de commande Ubuntu:
-                      <li><b>docker build -t nlp_emotion_app .</b>  (</i>Pour construire l'image dans le Docker</i>)</li>
-                      <li><b>docker images</b>  (<i>Vérifier si l'image a bien été construite<i>)</li>
-                      <li><b>docker run -p 8501:8501 nlp_emotion_app</b>     (<i>Lancer l'interface<i>)</li>
+           <ul><li><b>Activer le Docker</b></li></ul>
+           <p>Ligne de commande à entrer dans l'invite de commande Ubuntu:</p>
+           <ul>
+                      <li><b>docker build -t nlp_emotion_app .</b>  (<i>Pour construire l'image dans le Docker</i>)</li>
+                      <li><b>docker images</b>  (<i>Vérifier si l'image a bien été construite</i>)</li>
+                      <li><b>docker run -p 8501:8501 nlp_emotion_app</b>  (<i>Lancer l'interface</i>)</li>
            </ul>
            <img src="capture_img/LancementDocker.jpg" alt="Lancement du Docker" width="600">
            <h4>Par la suite, pour ouvrir l'interface streamlit:</h4>
