@@ -1,78 +1,107 @@
-Projet : NLP Analyse émotionnelle
+<h1>Projet : NLP Analyse Ã©motionnelle</h1>
 
 
-Détection des émotion humaines à partir de courtes phrases.
+<h3>DÃ©tection des Ã©motion humaines Ã  partir de courtes phrases.</h3>
 
-Introduction:
-Dans ce projet personnel qui a pour objectif d'améliorer mes compétences dans le domaine du machine learning, j'ai entraîné un modèle  de régression logistique afin d'identifier l'émotion dominante dans une phrase courte.  L'application streamlit sera nécessaire pour tester le modèle sur différents échantillons de phrase correspondant à six classes d'émotions Pour ce faire , on transforme le texte brut en une émotion interprétable.
-Les émotions sujet à détection:
-Joie
-Tristesse
-Amour
-Peur
-Surprise
-Colère
-C'est un modèle qui pourrait potentiellement intégrer une application telle qu'un outil d'analyse ou bien un système interactif.
+<h2>Introduction:</h2>
+<p>Dans ce projet personnel qui a pour objectif d'amÃ©liorer mes compÃ©tences dans le domaine du machine learning, j'ai entraÃ®nÃ© un modÃ¨le  de rÃ©gression logistique afin d'identifier l'Ã©motion dominante dans une phrase courte.  L'application streamlit sera nÃ©cessaire pour tester le modÃ¨le sur diffÃ©rents Ã©chantillons de phrase correspondant Ã  six classes d'Ã©motions Pour ce faire , on transforme le texte brut en une Ã©motion interprÃ©table.</p></br>
 
-Etape de la création du modèle
-J'ai choisi la création d'une simple pipeline qui à pour charge de:
-Nettoyer le texte
-Utilisation de la Vectorisation TF-IDF sur la colonne "text" pour le praitraitement
-Utilisation d'une GridSearch parmi 3 Pipelines contenant chacun un modèle séléctionnés pour notre cas d'usage.( LogisticRegression, LinearSVC, MultinomialNB). 
-Entrainement final avec la pipeline qui à obtenu le meilleurs score. A savoir la régréssion de logisitque.
-Création d'un Streamlit permettant de tester le modèle en effectuant un prompt. Elle affichera la classe correspondant au texte une statistique de mesure sur les différentes classes
-Une déploiement Docker à était effectuer afin de permettre de tester plus facilement l'application
+<p>Les Ã©motions sujet Ã  dÃ©tection:</p>
+<ul>
+           <li>Joie</li>
+           <li>Tristesse</li>
+           <li>Amour</li>
+           <li>Peur</li>
+           <li>Surprise</li>
+           <li>ColÃ¨re</li>
+</ul>
+<p>C'est un modÃ¨le qui pourrait potentiellement intÃ©grer une application telle qu'un outil d'analyse ou bien un systÃ¨me interactif.</p>
 
-Mesure de Performance
-Oberservation: 
-Selon les résultats en dessous le modèle est très performant et généralise bien sur la l'ensemble des classes. Cependant, des faiblesses sur certaines émotions sont à noter, comme celui de la peur qui doit être confondu avec l'émotion surprise, qui d'ailleurs est l'émotion  la plus difficile à reconnaitre.
-Acuracy:  89% 
-Macro F1-score :  85%
-Weighted F1-score 89%
+<h2>Etape de la crÃ©ation du modÃ¨le</h2>
+<p></p>J'ai choisi la crÃ©ation d'une simple pipeline qui Ã  pour charge de:</p>
+<ul>
+           <li>Nettoyer le texte</li>
+           <li>Utilisation de la Vectorisation TF-IDF sur la colonne "text" pour le praitraitement</li>
+           <li>Utilisation d'une GridSearch parmi 3 Pipelines contenant chacun un modÃ¨le sÃ©lÃ©ctionnÃ©s pour notre cas d'usage.( LogisticRegression, LinearSVC, MultinomialNB). </li>
+           <li>Entrainement final avec la pipeline qui Ã  obtenu le meilleurs score. A savoir la rÃ©grÃ©ssion de logisitque.</li>
+           <li>CrÃ©ation d'un Streamlit permettant de tester le modÃ¨le en effectuant un prompt. Elle affichera la classe correspondant au texte une statistique de mesure sur les diffÃ©rentes classes</li>
+           <li>Une dÃ©ploiement Docker Ã  Ã©tait effectuer afin de permettre de tester plus facilement l'application</li>
+           <img src="capture_img/Ex_ADE_3.png" alt="Analyse exploratoire des donnÃ©e" width="200">
+           <img src="capture_img/Cap_des_modÃ¨les_selectionnees.png" alt="capture du modÃ¨le" width="200">
+           <img src="capture_img/Cap_Ex_GridSearchCV.png" alt="Capture de la GridSearchCV" width="200">
+</ul>
 
-Matrice de confusion:
-On peut observer:
-Les émotions fortes (tristesse, joie, colère) sont très bien capturées
-Les confusions se produisent surtout entre émotions proches (peur, surprise)
-Le modèle reste cohérent et stable
+<h2>Mesure de Performance</h2>
+<ul>
+<p>Oberservation: Selon les rÃ©sultats en dessous le modÃ¨le est trÃ¨s performant et gÃ©nÃ©ralise bien sur la l'ensemble des classes. Cependant, des faiblesses sur certaines Ã©motions sont Ã  noter, comme celui de la peur qui doit Ãªtre confondu avec l'Ã©motion surprise, qui d'ailleurs est l'Ã©motion  la plus difficile Ã  reconnaitre.</p>
+           <img src="capture_img/MesureDePeroformance_Model.png" alt="Mesure de performance" width="600">
+           <li><b>Acuracy:  89%</b> </li>
+           <li><b>Macro F1-score :  85%</b></li>
+           <li><b>Weighted F1-score 89%</b></li>
+</ul>
 
-Exemple d'utilisation:
-Dans le prompt, écrire une courte phrase en anglais. Puis appuyer sur le bouton analyser afin d'afficher la classe de l'émotion correspondant à la phrase. 
+<h2>Matrice de confusion:</h2>
+<ul>
+           <img src="capture_img/MatriceDeConfusion_LR.png" alt="Matrice de confusion" width="600">
+           <p>On peut observer:</p>
+           <li>Les Ã©motions fortes (tristesse, joie, colÃ¨re) sont trÃ¨s bien capturÃ©es</li>
+           <li>Les confusions se produisent surtout entre Ã©motions proches (peur, surprise)</li>
+           <li>Le modÃ¨le reste cohÃ©rent et stable</li>
+</ul>
 
-Déploiement dans le Docker
-Activer le Docker
-ligne de commande à entrer dans l'invite de commande Ubuntu:
-docker build -t nlp_emotion_app .                 (Pour construire l'image dans le Docker)
-docker images                                                   (Vérifier si l'image a bien été construite)
-docker run -p 8501:8501 nlp_emotion_app     (Lancer l'interface)
 
-Par la suite, pour ouvrir l'interface streamlit:
-Dans une nouvelle fenêtre, entrez dans la barre URL : http://localhost:8501
 
-Structure du projet
--NLP-AnalyseSentiment/ 
-??? data/ 
-? 
-??? model/ ? 
-           ??? sentiment_model.pkl ?
- ??? notebooks/ ? 
-            ??? 1_EDA.ipynb?
-            ??? 2_Prepro_ML.ipynb.ipynb ?
- ??? app.py
- ??? Dockerfile 
-??? requirements.txt
-??? README.md
 
-Technologies utilisées
- Python
-Numpy / Pandas
-Scikil-learn
-NLP
-Streamlit
-Docker
 
-Conclusion
-Ce projet personnel assez basique m'a permis de monter en compétence dans le domaine du NLP, surtout sur la manière de nettoyer et de prétraiter les données. Ça était pour moi une bonne expérience enrichissante. Cela m'a permis de concevoir une application interactive basée sur un modèle léger et efficace, adaptée à l’analyse d’émotions dans des textes courts. Les évolutions possibles incluent l’ajout de la prise en charge du français, soit via un dataset d’émotions francophone, soit par la création d’un jeu de données dédié, ou encore par la traduction automatique des phrases avant leur traitement par le modèle.
+<h2>Exemple d'utilisation:</h2>
+Dans le prompt, Ã©crire une courte phrase en anglais. Puis appuyer sur le bouton analyser afin d'afficher la classe de l'Ã©motion correspondant Ã  la phrase. 
 
-Auteur du projet:   Johann JOURNAUX
+<h2>DÃ©ploiement dans le Docker</h2>
+<nav>
+           <li><b>Activer le Docke</b>r</li>
+           <ul>ligne de commande Ã  entrer dans l'invite de commande Ubuntu:
+                      <li><b>docker build -t nlp_emotion_app .</b>  (</i>Pour construire l'image dans le Docker</i>)</li>
+                      <li><b>docker images</b>  (<i>VÃ©rifier si l'image a bien Ã©tÃ© construite<i>)</li>
+                      <li><b>docker run -p 8501:8501 nlp_emotion_app</b>     (<i>Lancer l'interface<i>)</li>
+           </ul>
+           <img src="capture_img/LancementDocker.jpg" alt="Lancement du Docker" width="600">
+           <h4>Par la suite, pour ouvrir l'interface streamlit:</h4>
+           <ul><p>Dans une nouvelle fenÃªtre, entrez dans la barre URL :</p>
+                      <li><b>http://localhost:8501</b></li> 
+           <img src="capture_img/cap_streamlit_3.jpg" alt="Capture du Streamlit" width="800"> 
+           </ul>
+</nav>
+
+
+<h2>Structure du projet</h2>
+<pre style="font-family: Consolas, monospace; font-size: 15px; line-height: 1.4;">
+NLP_AnalyseDeSentiment/
+â”‚
+â”œâ”€â”€ data/
+â”œâ”€â”€ model/
+â”‚   â””â”€â”€ model_lr.pkl
+â”œâ”€â”€ notebooks/
+â”‚   â”œâ”€â”€ 1_EDA.ipynb
+â”‚   â””â”€â”€ 2_Prepro_ML.ipynb
+â”œâ”€â”€ capture_img/
+â”œâ”€â”€ app.py
+â”œâ”€â”€ Dockerfile
+â”œâ”€â”€ requirements.txt
+â””â”€â”€ README.md
+</pre>
+
+<h2>Technologies utilisÃ©es</h2>
+<ul>
+<li>Python</li>
+<li>Numpy / Pandas</li>
+<li>Scikil-learn</li>
+<li>NLP</li>
+<li>Streamlit</li>
+<li>Docker</li>        
+</ul>
+
+<h2>Conclusion</h2>
+<p>Ce projet personnel assez basique m'a permis de monter en compÃ©tence dans le domaine du NLP, surtout sur la maniÃ¨re de nettoyer et de prÃ©traiter les donnÃ©es. Ã‡a Ã©tait pour moi une bonne expÃ©rience enrichissante. Cela m'a permis de concevoir une application interactive basÃ©e sur un modÃ¨le lÃ©ger et efficace, adaptÃ©e Ã  lâ€™analyse dâ€™Ã©motions dans des textes courts. Les Ã©volutions possibles incluent lâ€™ajout de la prise en charge du franÃ§ais, soit via un dataset dâ€™Ã©motions francophone, soit par la crÃ©ation dâ€™un jeu de donnÃ©es dÃ©diÃ©, ou encore par la traduction automatique des phrases avant leur traitement par le modÃ¨le.</p>
+
+<span>Auteur du projet: <b>Johann JOURNAUX</b></span>
 
