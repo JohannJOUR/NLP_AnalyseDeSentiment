@@ -25,7 +25,7 @@
            <li>Utilisation d'une GridSearch parmi 3 Pipelines contenant chacun un modèle séléctionnés pour notre cas d'usage.( LogisticRegression, LinearSVC, MultinomialNB). </li>
            <li>Entrainement final avec la pipeline qui à obtenu le meilleurs score. A savoir la régréssion de logisitque.</li>
            <li>Création d'un Streamlit permettant de tester le modèle en effectuant un prompt. Elle affichera la classe correspondant au texte une statistique de mesure sur les différentes classes</li>
-           <li>Un déploiement Docker à était effectuer afin de permettre de tester plus facilement l'application</li>
+           <li>Un déploiement Docker a été effectué afin de permettre de tester plus facilement l'application</li>
            <img src="capture_img/Ex_ADE_3.png" alt="Analyse exploratoire des donnée" width="200">
            <img src="capture_img/Cap_des_modèles_selectionnees.png" alt="capture du modèle" width="200">
            <img src="capture_img/Cap_Ex_GridSearchCV.png" alt="Capture de la GridSearchCV" width="200">
